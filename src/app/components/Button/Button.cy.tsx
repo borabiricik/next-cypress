@@ -17,4 +17,7 @@ describe("<Button />", () => {
   it("Should display correct text", () => {
     cy.dataCy("button").should("have.text", "Click me !")
   })
+  it("should fail", () => {
+    cy.dataCy("button").should("have.text", "Click me !!!!")
+  })
 })
