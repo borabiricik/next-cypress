@@ -23,8 +23,4 @@ describe("Home page test", () => {
     cy.dataCy("login-button").click()
     cy.url().should("include", "/auth/login")
   })
-
-  it("should fail", () => {
-    cy.dataCy("fail-button")
-  })
 })
