@@ -27,7 +27,6 @@ jobs:
           wait-on: "http://localhost:3000" # Waits for above
           # Records to Cypress Cloud
           # https://docs.cypress.io/guides/cloud/projects#Set-up-a-project-to-record
-          record: true
           parallel: true # Runs test in parallel using settings above
       - name: Cypress run - e2e
         # Uses the official Cypress GitHub action https://github.com/cypress-io/github-action
